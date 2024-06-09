@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Pablo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <h1>Pablo Jerez</h1>
+            <h2>Data Analyst</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/pablojereza/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Pjerez98"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>¡Hola! Soy Pablo Jerez, Ingeniero Civil Industrial especializado en transformar datos complejos en <span style="color: #1CB698;">insights valiosos</span>. Con 2 años de experiencia, he desarrollado habilidades en <span style="color: #1CB698;">análisis de datos</span>, <span style="color: #1CB698;">programación en Python</span>, y <span style="color: #1CB698;">manejo de bases de datos SQL</span>. He trabajado en proyectos de <span style="color: #1CB698;">Ciencia de Datos</span>, incluyendo uno destacado de <span style="color: #1CB698;">ETL</span> y <span style="color: #1CB698;">Visualización de Datos</span>, donde el <span style="color: #1CB698;">storytelling</span> fue clave para lograr un impacto significativo en la organización. Soy una persona <span style="color: #1CB698;">analítica</span> y orientada a la <span style="color: #1CB698;">resolución de problemas</span>, enfocada en entender las <span style="color: #1CB698;">necesidades del negocio</span>. Mis metas actuales son seguir desarrollando mis habilidades en <span style="color: #1CB698;">Ciencia de Datos</span> y colaborar en proyectos que generen un <span style="color: #1CB698;">impacto considerable</span>. ¡No dudes en contactarme para conocer más sobre mi trabajo!</p>
+
+
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            07-02-1998
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +569 52302919
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            pabloj98.jerez@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Swieqi, Malta
+                        </li>
+                        <li>
+                            <strong>Perfil</strong>
+                            <span>Data Analyst</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Technical Skills</h2>
+            <div class="col">
+                <!-- Technical Skill -->
+                <div class="col">
+                    
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="barra-skill">
+                            <div class="progreso powerbi">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="barra-skill">
+                            <div class="progreso git">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>English School</h4>
+                        <span class="casa">Gateway School of English</span>
+                        <span class="fecha">2024 - Actualidad</span>
+                        <p>Formación teórico - práctica para el idioma de inglés. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="item izq">
+                        <h4>Diplomado Data Science</h4>
+                        <span class="casa">Universidad del Desarrollo</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Formación en conceptos claves de la Ciencia de Datos, con un enfoque Data - Driven para la resolución de problemas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería Civil Industrial</h4>
+                        <span class="casa">Universidad de Concepción</span>
+                        <span class="fecha">2016 - 2022</span>
+                        <p>Formación sólida en ciencias de la ingeniería industrial, desarrollo de habilidades fundamentales para afrontar el mundo empresarial. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+             
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Profesional</h3>
+                    <div class="item der">
+                        <h4>Ingeniero Control Operacional</h4>
+                        <span class="casa">Buses Hualpen,<br> 
+                            Empresa Transporte Privado</span>
+                        <span class="fecha">2023-2024</span>
+                        <p>Liderazgo de proyectos de kilometraje ligados principalmente a la eficiencia operacional y financiera. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Ingeniero i+D</h4>
+                        <span class="casa">Buses Hualpen,<br>
+                            Empresa Transporte Privado</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p> Desarrollo de iniciativas de kilometraje a nivel compañía ligadas a la generación, automatización y disponibilización del dato.</p>
+                        <p style="text-indent: 25px;"></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="pages/experiencia.html">
+                        <img src="img/trabajo (2).jpg" alt="">
+                        <div class="overlay">
+                            <h3>Experiencia Profesional</h3>
+                            <p>SQL,Python,Power BI</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="pages/investigacion.html">
+                        <img src="img/research (1).jpg" alt="">
+                        <div class="overlay">
+                            <h3>Investigación MT</h3>
+                            <p>Python, Qgis, Simulación, Optimización</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="pages/Proyectos_personales.html">
+                        <img src="img/proyecto_personal.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Proyectos Personales</h3>
+                            <p>SQL,Python,Power BI</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion_3.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Malta, Swieqi
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Wsp: +569 52302919
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: pabloj98.jerez@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/pablojereza/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Pjerez98"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

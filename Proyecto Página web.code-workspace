@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Perfil Profesional/Ejemplos paginas web/ejemplo 1"
+		},
+		{
+			"path": "../Perfil Profesional/Ejemplos paginas web/ejemplo 1/portafolio-demo-master"
+		},
+		{
+			"path": "../Perfil Profesional/Ejemplos paginas web/ejemplo 2/Portafolio-Web-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ejemplo 1"
+	}
+}
