@@ -58,7 +58,7 @@ html{
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/ciencia-de-datos-2.jpg);
+    url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -215,7 +215,7 @@ html{
     padding: 50px 20px;
 }
 .skills .contenido-seccion{
-    max-width: 700px;
+    max-width: 1100px;
     margin: auto;
 }
 .skills h2{
@@ -269,40 +269,40 @@ html{
     font-size: 14px;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .sql{
+.skills .skill .javascript{
     width: 0%;
-    animation: 2s sql forwards;
+    animation: 2s javascript forwards;
 }
-@keyframes sql {
+@keyframes javascript {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 75%;}
 }
 
-.skills .skill .python{
+.skills .skill .htmlcss{
     width: 0%;
-    animation: 2s python forwards;
+    animation: 2s htmlcss forwards;
 }
-@keyframes python {
+@keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 89%;}
 }
 
-.skills .skill .powerbi{
+.skills .skill .photoshop{
     width: 0%;
-    animation: 2s powerbi forwards;
+    animation: 2s photoshop forwards;
 }
-@keyframes powerbi {
+@keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 95%;}
 }
 
-.skills .skill .git{
+.skills .skill .wordpress{
     width: 0%;
-    animation: 2s git forwards;
+    animation: 2s wordpress forwards;
 }
-@keyframes git {
+@keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 81%;}
 }
 
 .skills .skill .drupal{
@@ -367,6 +367,11 @@ html{
 .curriculum .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+}
+/* Estilos CSS para las imágenes dentro de la sección de curriculum */
+.contenido-seccion img {
+    max-width: 100%; /* Esto hará que la imagen no supere el ancho de su contenedor */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
 }
 .curriculum h2{
     font-size: 48px;
@@ -514,15 +519,12 @@ html{
 .portfolio .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
-    color: white;
 }
 .portfolio .galeria .proyecto .overlay:hover{
     opacity: 1;
-    color: white;
 }
 .portfolio .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
-    color: white;
 }
 /* SECCION CONTACTO */
 .contacto{
