@@ -368,6 +368,11 @@ html{
     max-width: 1100px;
     margin: auto;
 }
+/* Estilos CSS para las imágenes dentro de la sección de curriculum */
+.contenido-seccion img {
+    max-width: 100%; /* Esto hará que la imagen no supere el ancho de su contenedor */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+}
 .curriculum h2{
     font-size: 48px;
     font-family: 'Righteous';
