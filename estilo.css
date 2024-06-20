@@ -275,7 +275,7 @@ html{
 }
 @keyframes sql {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .python{
@@ -284,7 +284,7 @@ html{
 }
 @keyframes python {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .powerbi{
@@ -293,7 +293,7 @@ html{
 }
 @keyframes powerbi {
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 50%;}
 }
 
 .skills .skill .git{
@@ -302,7 +302,7 @@ html{
 }
 @keyframes git {
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 50%;}
 }
 
 .skills .skill .drupal{
